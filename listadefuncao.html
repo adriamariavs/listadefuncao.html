@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>listadeexercicios</title>
+
+</head>
+
+<body>
+    <script>
+        function cubo() {
+            var x = document.getElementById("valcubo").value;
+            document.getElementById("rescubo").innerHTML = x * x * x;
+        } 
+    </script>
+    <script>
+        function F2c() {
+            var x = document.getElementById("valF2c").value;
+            document.getElementById("resF2c").innerHTML = (x - 32) / 1.8
+        }
+    </script>
+    <script>
+        function Area() {
+            var x = document.getElementById("base").value;
+            var y = document.getElementById("altura").value;
+            document.getElementById("resarea").innerHTML = (x * y) / 2;
+        }
+    </script>
+    <script>
+        function area() {
+            var x = document.getElementById("valArea").value;
+            document.getElementById("resAreaC").innerHTML = 3.14 * (x * x);
+        }
+    </script>
+    <script>
+        function Peri() {
+            var x = document.getElementById("valperi").value;
+            document.getElementById("resperi").innerHTML = (2 * 3.14) * valperi;
+        }
+    </script>
+    <script>
+        function descont() {
+            var x = document.getElementById("valdescont").value;
+            document.getElementById("resdescont").innerHTML = valorinicial * 5 / 100;
+
+        }
+    </script>
+    <script>
+        function idade(ano_de_nacimento) {
+
+            var x = document.getElementById("validade").value;
+            document.getElementById("residade").innerHTML = varx = (2023 - x);
+            if (varx < 18) {
+                document.getElementById("residade").innerHTML = "menor de idade";
+            } else {
+                document.getElementById("residade").innerHTML = "maior de idade";
+            }
+        }
+
+
+    </script>
+    <input id="valcubo" value="3">
+    <button onclick="cubo()">cubo</button>
+    <p id="rescubo">XXXX</p>
+
+    <input id="valF2c" value="32">
+    <button onclick="F2c()">F2c</button>
+    <p id="resF2c">XXXX</p>
+
+    <input id="base" value="10">
+    <input id="altura" value="10">
+    <button onclick="Area()">Area</button>
+    <p id="resarea">XXXX</p>
+
+    <input id="valArea" value="10">
+    <button onclick="area()">Area</button>
+    <p id="resAreaC">XXXX</p>
+
+    <input id="valperi" value="10">
+    <button onclick="Peri()">Peri</button>
+    <p id="resperi">XXXX</p>
+
+    <input id="valdescont" value="10">
+    <button onclick="descont()">descont</button>
+    <p id="resdescont">XXXX</p>
+
+    <input id="validade" value="10">
+    <button onclick="idade()">idade</button>
+    <p id="residade">XXXX</p>
+</body>
+
+</html>
